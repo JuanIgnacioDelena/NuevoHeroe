@@ -7,6 +7,7 @@
 
 body {
     height: 100vh;
+    font-family: 'inter';
 }
 
 header {
@@ -49,6 +50,7 @@ main {
 h1 {
     padding: 2%;
     font-weight:bold;
+    font-family: 'inter';
 
 }
 
@@ -137,6 +139,7 @@ button {
     font-size: 1.5rem;
     font-weight: 700;
     margin-left: 190px;
+    font-family: 'inter'
 }
 
 footer {
