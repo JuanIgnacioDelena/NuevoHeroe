@@ -1,0 +1,32 @@
+.clase:hover{
+padding: 2rem;
+}
+
+Coloca un padding cuando paso el mouse por arriba.
+
+.clase:active{
+background-color: blue;
+}
+
+Aplica un estilo concreto cuando se hace click.
+
+.clase:nth-child(1){
+background-color: tomato
+}
+
+1 es la posición, por lo tanto si ponemos "even" se seleccionan los elementos pares del contenedor. Si ponemos "odd" los impares. 
+
+Aplica un estilo concreto al primer hijo de un padre con esa clase
+
+
+.clase:only-of-type{
+background-color: tomato
+}
+
+Aplica un estilo concreto a un elemento único en su tipo. 
+
+h3:not(.clase){
+color: red;
+}
+
+Que todos los h3 que no tengan la clase "clase" se aplique el color rojo de font. 

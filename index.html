@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Heroes</title>
+      <link href="css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@200&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div id="Descuentos">20% de descuentos en todos los productos</div>
+      <img src="img/Header.png" width=100%>
+      <nav><span>Contacto</span><span>Registrarme</span><span>Ingresar</span></nav>
+    </header>
+    <main>
+    <h1>Añadí tu super!</h1>
+    <h4>Agregá tu personaje favorito completando las opciones.</h4>
+      <form method="POST" action="resultado.html">
+      <div class="campos_izq">
+        <label for="nombre">*Nombre</label>
+        <br>
+        <br>
+        <input type="textarea" name="nombre" id="nombre">
+        <label for="Fecha">Fecha</label>
+        <br>
+        <br>
+        <input type="date" name="Fecha" id="Fecha">
+        <br>
+        <br>
+        <input type="textarea" name="Descripción" placeholder="Descripción" id="Descripción">
+      </div>
+
+      <div class="campos_der">
+        <label for="Especie">*Especie</label>
+        <select name="Especie" id="Especie">
+          <option value="" disabled selected>Especie</option>
+          <option>Humano</option>
+          <option>Cyborg</option>
+          <option>Extraterrestre</option>
+        </select>
+        <label for="Foto">Agregar foto</label>
+        <br>
+        <br>
+        <input type="file" name="Foto" id="Foto">
+        
+        <br>
+        <br>
+        <div class="check">
+        <label for="Poderes">Poderes</label>
+        <br>
+        <div><input type="checkbox" name="Poderes" value="Volar"> Volar</input></div>
+        <div><input type="checkbox" name="Poderes" value="Superinteligencia"> Superinteligencia</input></div>
+        <div><input type="checkbox" name="Poderes" value="Vista de rayo láser"> Vista de rayo láser</input></div>
+        <div><input type="checkbox" name="Poderes" value="Billetera gorda"> Billetera gorda</input></div>
+        <br>
+        <label for="Personaje">Tipo de personaje</label>
+        <br>
+        <div><input type="radio" name="Personaje" value="Héroe/Heroína"> Héroe/Heroína</input></div>
+        <div><input type="radio" name="Personaje" value="Villano/Villana"> Villano/Villana</input></div>
+      </div>
+      </div>
+      </div>
+      <br>
+      <br>
+      <button type="submit" value="Añadir">Añadir</button>
+      </form>
+    </main>
+    <footer>
+      Todos los derechos reservados a FRONT END 1
+    </footer>
+  </body>
+
+</html>
